@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/previewmajor/styles.css">
+    <title>Property Division</title>
+</head>
+<body>
+
+    <div class="menu" onclick="openmenu2()" id="menu">
+        <img src="/previewmajor/menuicon.png" alt="menu" width="30px" onclick="openmenu2()" id="menuicon">
+    </div>
+
+
+
+    <div class="menu-content" id="menu-content">
+        <ul>
+            <img src="/previewmajor/closeicon.png" alt="" width="30px" class="close" onclick="closemenu()">
+            <img src="/previewmajor/black-logo.png" alt="" width="200px" onclick="location.href = '/previewmajor/index.html'" id="myblack">
+            <li><a href="/previewmajor/practiceareas.html">Practice Areas</a></li>
+            <li><a href="/previewmajor/resources.html">Resources</a></li>
+            <li><a href="/previewmajor/testimionals.html">Testimonials</a></li>
+            <li><a href="/previewmajor/about.html">About Us</a></li>
+            <li><a href="/previewmajor/contact.html">Contact</a></li>
+            <li><a href="tel:+141547465750">+141547465750</a></li>
+            <li><a href="example@example.com">example@example.com</a></li>
+            <li><a href="https://maps.app.goo.gl/FErGB4VkaFy6Dajn7" target="_blank">1388 Sutter St UNIT 521, San Francisco, CA 94109, United States</a></li>
+        </ul>
+    </div>
+
+ <script>
+        function openmenu2() {
+            var menuContent = document.getElementById("menu-content");
+            var risingpoint = document.getElementById("myblack")
+            menuContent.style.height = "130%";
+            risingpoint.style.animation = "rise 1.5s"; // Apply the animation
+    
+            // Reset the animation after it completes
+            setTimeout(function () {
+                risingpoint.style.animation = "";
+            }, 2000); // Set the timeout to match the animation duration
+        }
+    
+        function closemenu() {
+            var menuContent = document.getElementById("menu-content");
+    
+            menuContent.style.height = "0%";
+        }
+    </script>
+
+
+    <nav class="navbar"  id="navbar">
+            <div class="logo" onclick="location.href='/previewmajor/index.html'">
+            <img src="/previewmajor/gold-logo.png" alt="Law Office Logo" onclick="location.href='/previewmajor/index.html'">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/previewmajor/practiceareas.html">Practice Areas</a></li>
+            <li><a href="/previewmajor/resources.html">Resources</a></li>
+            <li><a href="/previewmajor/testimionals.html">Testimonials</a></li>
+            <li><a href="/previewmajor/about.html">About Us</a></li>
+        </ul>
+        <div class="contact">
+            <a href="/previewmajor/contact.html" class="contact-link">Contact</a>
+        </div>
+    </nav>
+
+
+
+    <header>
+        <h1>Property Division</h1>
+        <p>"
+            In the intricate process of property division, meticulous attention to detail and open communication are pivotal. Striking a fair balance and ensuring transparency can help streamline this aspect of separation or divorce. Collaborative negotiations and a focus on equitable solutions pave the way for a smoother transition, fostering a sense of closure and financial stability for all parties involved
+                        "
+        </p>
+
+        <img src="/previewmajor/black-logo.png" alt="" width="200px">
+    </header>
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL&display=swap');
+
+
+::placeholder{
+    color: #D4AF37;
+}
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function() {
+        var scroll = window.scrollY || window.pageYOffset;
+
+        if (scroll > 0) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var menu = document.getElementById("menu");
+
+      window.addEventListener("scroll", function() {
+        var scroll = window.scrollY || window.pageYOffset;
+
+        if (scroll > 0) {
+          menu.classList.add("scrolled");
+          document.getElementById('menuicon').src = '/previewmajor/black-menu.png';
+        } else {
+            menu.classList.remove("scrolled");
+            document.getElementById('menuicon').src = '/previewmajor/menuicon.png';
+        }
+      });
+    });
+
+  </script>
+    <main>
+        <section class="content-box">
+            <img src="/previewmajor/division.png" alt="Divorce Image" id="left" width="400px">
+            <p> <span>1. Complexity of Assets: </span> <br>
+                The more complex your assets are, the more time and expertise it may require to fairly divide them. Assets can include real estate, investments, retirement accounts, businesses, and more. The cost of appraisals, valuations, and legal assistance can contribute to the overall expense.
+            </p>
+              <p> <span>2. Valuation and Appraisal Costs: </span> <br>
+                Determining the value of assets, such as real estate or business interests, may involve hiring professionals like appraisers or financial experts. These additional services can increase the cost of property division.
+                <br></p>
+               <p> <span>3. Legal Representation: </span> <br>
+                Many individuals seek legal representation to ensure their interests are protected during property division. Legal fees can vary based on the complexity of the case, the attorney's experience, and your location.
+            </p><br>
+               <p><span> 4. Mediation and ADR: </span> <br>
+                Mediation or alternative dispute resolution (ADR) can be cost-effective ways to resolve property division disputes without going to court. However, mediator fees may apply, and the success of these methods depends on the willingness of both parties to cooperate.
+                <br></p>
+        </section>
+        <section class="content-box" >
+            <img src="/previewmajor/division2.png" alt="Divorce Image" id="reverse" width="300px">
+            <p> <span> 5.Court Costs: </span> <br>
+                In some cases, property division disputes may end up in court, resulting in court fees and potentially higher legal expenses.
+            </p> <br>
+               <p><span>6. Geographic Location:</span> <br>
+                The cost of property division can vary by location due to differences in the cost of living, legal fees, and court costs.
+            </p> <br>
+              <p> <span>7. Amicability and Cooperation:</span> <br>
+                A more amicable and cooperative approach to property division can often reduce costs. When both parties are willing to negotiate and compromise, it can lead to a quicker and less expensive resolution.
+                <br> </p>
+       
+        </section>
+        <section class="content-box">
+            <img src="/previewmajor/division3.png" alt="Divorce Image" width="500px" id="divorce3">
+            <p><span>8. Division of Debts:</span> <br>
+                In addition to assets, debts acquired during the marriage must also be divided. Determining how to allocate these debts can add complexity and potentially increase costs.
+            </p>  <br>
+            <p>  <span>9. Tax Implications:</span> <br>
+                Property division can have tax implications, which may require consulting with tax professionals. Understanding and managing these tax consequences can affect the overall financial outcome.
+            </p> <br>
+              <p> <span>10. Legal Documentation:</span> <br>
+                Drafting and reviewing legal documents, such as property settlement agreements, can incur additional legal fees.</p>
+                
+                <br> <p>In conclusion, the expenses associated with property division can differ significantly, contingent upon the intricacies of your assets, the necessity for professional appraisals, the legal representation you choose, and the method of dispute resolution you opt for. It's crucial to evaluate your individual circumstances and priorities to ensure informed decision-making regarding property division during a divorce or separation. Take action today and choose our skilled team to expertly navigate the complexities of property division, ensuring a cost-effective and fair approach tailored to your specific needs. Schedule a consultation with us now to secure your financial future with confidence.</p>
+                
+                
+                
+                
+                
+                </p>
+        </section>
+    </main>
+
+    <section class="contact-form-section">
+
+        <h2 >We Can't Wait to Asist you<span style="font-family: 'REM', sans-serif;  font-size: 32px;">!</span></h2>
+        <img src="/previewmajor/nicelineblack.svg" alt="" width="250px" id="nicecontactline">
+        <div class="contact-column putborder">
+        <form id="contact-form" method="post" action="sendmail.php">
+            <div class="form-group">
+                <label for="first-name" >First Name</label>
+                <input type="text" id="first-name" name="first-name" required >
+            </div>
+            <div class="form-group">
+                <label for="last-name" >Last Name</label>
+                <input type="text" id="last-name" name="last-name" required >
+            </div>
+            <div class="form-group">
+                <label for="email" >Email</label>
+                <input type="email" id="email" name="email" required >
+            </div>
+            <div class="form-group">
+                <label for="phone" >Phone</label>
+                <input type="tel" id="phone" name="phone" required >
+            </div>
+            <div class="form-group">
+                <label for="when-to-contact" style="color: black;">When Is a Good Time to Get Back to You?</label>
+                <input type="text" id="when-to-contact" name="when-to-contact" placeholder="ex. After 5pm, on the weekends. etc.">
+             </div>
+            <div class="form-group">
+                <label for="case-details" >Explain Your Case</label>
+                <textarea id="case-details" name="case-details" rows="4" ></textarea>
+            </div>
+            <div class="form-group">
+                <button id="mybutton" type="submit" >Submit</button>
+            </div>
+        </form>
+        </div>
+        <div class="phoneandemail contact-column">
+            <p style="border-color: black;">Phone</p>
+            <a href="tel:+14154746575" style="border: 1px solid black;">+14154746575</a> 
+            <p>Email</p>
+            <a href="mailto:example@example" style="border: 1px solid black;">example@example</a>
+        </div>
+
+
+
+    </section>
+    
+<style>
+
+.contact-form-section {
+    background-color: #D4AF37;
+    text-align: center;
+    padding: 30px 0;
+margin-bottom: 20px;
+color:black;
+}
+
+    .form-group input,
+.form-group textarea{
+    background-color: black;
+    color: #D4AF37;
+    border-color: black;
+    
+}
+
+
+textarea:focus,
+input:focus{
+    background-color: #D4AF37;
+    color: black;
+}
+
+button[type="submit"] {
+    background-color: black;
+    color: #D4AF37;
+    border: 1px solid black;
+
+
+}
+.menu-content{
+
+margin-top: -180px;
+z-index: 101;
+}
+.putborder{
+    border-color: black;
+}
+
+button[type="submit"]:hover{
+    background: #D4AF37;
+    color:black;
+}
+@media screen and (max-width:600px) {
+    .form-group input,
+.form-group textarea{
+margin-left: 5px;
+width:175%;
+}
+}
+</style>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+
+body {
+    font-family: 'REM', sans-serif;
+    background-color: black;
+    color: #D4AF37;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:600px) {
+    #left{
+        width: 350px;
+        float: unset;
+        
+    }
+
+    #reverse{
+        width: 349px;
+        float: unset;
+        
+    }
+    #divorce3{
+        width: 300px;
+    }
+}
+
+h1 {
+    font-size: 36px;
+}
+
+main {
+
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content-box {
+    background-color: #D4AF37;
+    color: black;
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    border-top: 1px solid #D4AF37;
+    border-bottom: 1px solid #D4AF37;
+    align-items: center;
+}
+
+
+.content-box-reverse img{
+    float: right;
+}
+
+#reverse{
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
+
+}
+.content-box img{
+    margin: 30px;
+    border: 1px solid black;
+}
+#left{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.content-box p {
+    width: 100%;
+    line-height: 30px;
+}
+span{
+    font-weight: 900;
+    font-size: 21px;
+    font-family: 'Dai Banna SIL', serif;
+}
+
+@media screen and (max-width:600px){
+    header{
+        margin-top: 100px;
+      padding-bottom: 250px;
+    }
+}
+
+
+
+</style>
+
+
+<footer class="footer-section">
+    <div class="footer-logo">
+        <img src="/previewmajor/black-logo.png" alt="Footer Logo" width="250px">
+    </div>
+    <div class="footer-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.101794470897!2d-122.42568158954037!3d37.78765411130279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580959df707c7%3A0xe3cfa1d9235f41b8!2sDale%20G%20Major%20Law%20Offices!5e0!3m2!1sen!2str!4v1696181500641!5m2!1sen!2str" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-links">
+        <ul>
+            <li><a href="/previewmajor/index.html">Home</a></li>
+            <li><a href="/previewmajor/practiceareas.html">Practice Areas</a></li>
+            <li><a href="/previewmajor/resources.html">Resources</a></li>
+            <li><a href="/previewmajor/testimionals.html">Testimonials</a></li>
+            <li><a href="/previewmajor/about.html">About Us</a></li>
+            <li><a href="/previewmajor/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-contact">
+        <div class="contact-info">
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:example@example">Email: example@example.com</a>
+        </div>
+        <div class="contact-info">
+            <i class="fa fa-phone"></i>
+            <a href="tel:123456789">Phone: +14154746575</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

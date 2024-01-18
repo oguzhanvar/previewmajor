@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu" onclick="openmenu2()" id="menu">
+        <img src="menuicon.png" alt="menu" width="30px" onclick="openmenu2()" id="menuicon">
+    </div>
+
+
+
+    <div class="menu-content" id="menu-content">
+        <ul>
+            <img src="closeicon.png" alt="" width="30px" class="close" onclick="closemenu()">
+            <img src="black-logo.png" alt="" width="200px" onclick="location.href = '/previewmajor/index.html'" id="myblack">
+            <li><a href="practiceareas.html">Practice Areas</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="testimionals.html">Testimonials</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="+141547465750">+141547465750</a></li>
+            <li><a href="example@example.com">example@example.com</a></li>
+            <li><a href="https://maps.app.goo.gl/FErGB4VkaFy6Dajn7" target="_blank">1388 Sutter St UNIT 521, San Francisco, CA 94109, United States</a></li>
+        </ul>
+    </div>
+
+ <script>
+        function openmenu2() {
+            var menuContent = document.getElementById("menu-content");
+            var risingpoint = document.getElementById("myblack")
+            menuContent.style.height = "130%";
+            risingpoint.style.animation = "rise 1.5s"; // Apply the animation
+    
+            // Reset the animation after it completes
+            setTimeout(function () {
+                risingpoint.style.animation = "";
+            }, 2000); // Set the timeout to match the animation duration
+        }
+    
+        function closemenu() {
+            var menuContent = document.getElementById("menu-content");
+    
+            menuContent.style.height = "0%";
+        }
+    </script>
+    
+    <nav class="navbar"  id="navbar">
+            <div class="logo" onclick="location.href='/previewmajor/index.html'">
+            <img src="gold-logo.png" alt="Law Office Logo" onclick="location.href='/previewmajor/index.html'">
+        </div>
+        <ul class="nav-links">
+            <li><a href="practiceareas.html">Practice Areas</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="testimionals.html">Testimonials</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="contact">
+            <a href="contact.html" class="contact-link">Contact</a>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var navbar = document.getElementById("navbar");
+    
+          window.addEventListener("scroll", function() {
+            var scroll = window.scrollY || window.pageYOffset;
+    
+            if (scroll > 0) {
+              navbar.classList.add("scrolled");
+            } else {
+              navbar.classList.remove("scrolled");
+            }
+          });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+      var menu = document.getElementById("menu");
+
+      window.addEventListener("scroll", function() {
+        var scroll = window.scrollY || window.pageYOffset;
+
+        if (scroll > 0) {
+          menu.classList.add("scrolled");
+          document.getElementById('menuicon').src = 'black-menu.png';
+        } else {
+            menu.classList.remove("scrolled");
+            document.getElementById('menuicon').src = 'menuicon.png';
+        }
+      });
+    });
+      </script>
+    
+    <section class="contact-form-section" style="margin-top: 100px;">
+
+        <h2 style="color: black;">We Can't Wait to Asist you<span style="font-family: 'REM', sans-serif;">!</span></h2>
+        <img src="nicelineblack.svg" alt="" width="250px" id="nicecontactline">
+        <div class="contact-column putborder">
+        <form id="contact-form" method="post" action="sendmail.php">
+            <div class="form-group">
+                <label for="first-name" style="color: black;">First Name</label>
+                <input type="text" id="first-name" name="first-name" required >
+            </div>
+            <div class="form-group">
+                <label for="last-name" style="color: black;">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required >
+            </div>
+            <div class="form-group">
+                <label for="email" style="color: black;">Email</label>
+                <input type="email" id="email" name="email" required >
+            </div>
+            <div class="form-group">
+                <label for="phone" style="color: black;">Phone</label>
+                <input type="tel" id="phone" name="phone" required >
+            </div>
+            <div class="form-group">
+                <label for="when-to-contact" style="color: black;">When Is a Good Time to Get Back to You?</label>
+            <input type="text" id="when-to-contact" name="when-to-contact" placeholder="ex. After 5pm, on the weekends. etc.">
+            </div>
+            <div class="form-group">
+                <label for="case-details" style="color: black;">Explain Your Case</label>
+                <textarea id="case-details" name="case-details" rows="4" ></textarea>
+            </div>
+            <div class="form-group">
+                <button id="mybutton" type="submit" >Submit</button>
+            </div>
+        </form>
+        </div>
+        <div class="phoneandemail contact-column">
+            <p>Phone</p>
+            <a href="tel:+14154746575">+14154746575</a> 
+            <p>Email</p>
+            <a href="mailto:example@example">example@example</a>
+        </div>
+
+
+
+    </section>
+    
+    <style>
+        .menu-content{
+
+margin-top: -180px;
+z-index: 101;
+}
+    </style>
+    
+
+    <footer class="footer-section">
+        <div class="footer-logo">
+            <img src="black-logo.png" alt="Footer Logo" width="250px">
+        </div>
+        <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.101794470897!2d-122.42568158954037!3d37.78765411130279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580959df707c7%3A0xe3cfa1d9235f41b8!2sDale%20G%20Major%20Law%20Offices!5e0!3m2!1sen!2str!4v1696181500641!5m2!1sen!2str" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="practiceareas.html">Practice Areas</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="testimionals.html">Testimonials</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <div class="contact-info">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:example@example">Email: example@example.com</a>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-phone"></i>
+                <a href="tel:123456789">Phone: +14154746575</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

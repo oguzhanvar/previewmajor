@@ -1,0 +1,1091 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL&display=swap');
+body {
+    font-family: 'REM', sans-serif;
+    background-color: black;
+    color: #D4AF37;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    position: fixed;
+    top: 10px;
+    right: 10px;    
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+
+}
+
+
+
+
+
+@keyframes niceflip {
+    0% {
+ 
+    margin-top: -50px;
+    
+}
+
+    100% {
+      
+        padding-top: 90px;
+    }
+}
+
+
+@keyframes color-change {
+    0% {
+        background-color: #eedeab;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        background-color: #D4AF37;
+    
+    }
+}
+
+
+@keyframes shine {
+    
+    0%{
+        background-color: #D4AF37
+    }
+
+
+    50%{
+        background-color: #e7ca6a;
+    }
+
+    100%{
+        background-color: #D4AF37;
+    }
+}
+
+@keyframes rise {
+    0%{
+        margin-top: 200px;
+    
+    }
+
+
+    100%{
+        margin-top: 90px;
+
+    }
+}
+
+
+.menu-content{
+
+position: fixed;
+width: 100%;
+height: 0%;
+overflow: hidden;
+background-color: rgb(212, 175, 55, 0.9);
+transition: 1.5s;
+justify-content: center;
+align-items: center;
+
+text-align: center;
+margin-top: -90px;
+z-index: 101;
+}
+
+
+
+.menu-content img{
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.menu-content ul{
+
+margin: 0;
+padding: 0;
+}
+.menu-content li{
+    list-style: none;
+
+    margin-bottom: 30px;
+
+}
+
+.menu-content a{
+
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ;
+}
+
+.menu-content a:hover{
+    text-decoration: none;
+
+    color: white;
+}
+
+.close{
+
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+}
+
+
+
+.navbar {
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 97%;
+    margin-left: 0;
+    top: 0;
+    transition:0.3s;
+    padding-top: 15px;
+}
+
+
+
+.logo img {
+  cursor: pointer;
+  width: 200px; /* Adjust the height as needed */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #D4AF37;
+    transition: 0.5s;
+}
+
+.navbar.scrolled{
+    background-color: #D4AF37;
+    color: black;
+    z-index: 99;
+     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  }
+
+
+
+  .navbar.scrolled.navbar a{
+    color: black;
+  }
+
+  .navbar.scrolled .nav-links a:hover{
+    color: white !important;
+  }
+
+  .navbar.scrolled .contact-link{
+    background-color: black;
+    color: #D4AF37 !important;
+    border-color: black;
+  }
+
+  .navbar.scrolled .contact-link:hover{
+    background-color: #D4AF37;
+    color: black !important;
+  }
+
+  .navbar.scrolled .logo{
+    content: url(black-logo.png);
+    width: 200px;
+    cursor: pointer;
+  }
+
+
+
+.nav-links a:hover{
+    color: white;
+}
+
+.contact-link {
+   background-color: #D4AF37;
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    border: 1px solid #D4AF37;
+    transition: 0.5s;
+
+}
+
+.contact-link:hover {
+    background-color: transparent;
+    color: #D4AF37;
+}
+
+video{
+  top: 0;
+  margin-top: -103px;  
+  opacity: 0.7;
+}
+
+
+.gold-area{
+
+    height: 600px;
+    margin-bottom: 200px;
+    margin-top: 0px;
+    color: #D4AF37;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+
+.gold-area h1{
+    font-size: 94px;
+padding-top: 90px;
+font-family: 'Dai Banna SIL', serif;
+animation: niceflip 1s ;
+animation-delay: 0s;
+
+
+}
+
+
+.gold-area p{
+   font-size: 18px;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto; /* Align the left margin to auto */
+    margin-right: auto; /* Align the right margin to auto */
+    text-align: left;
+}
+
+.gold-area a{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    background-color: #D4AF37;
+    padding: 15px 20px;
+transition: 0.5s;
+animation-name: shine;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+
+
+
+}
+
+.gold-area a:hover{
+    animation: none;
+background-color: black;
+color: #D4AF37;
+}
+
+
+
+
+
+/* Additional styles for the About Us section */
+.about-section {
+    margin-bottom: 200px;
+    background-color: #D4AF37;
+    text-align: center;
+    padding: 30px 0;
+    background-image: url(aboutbg.png);
+background-size: cover;
+    text-align: left;
+}
+
+@media screen and (max-width:600px){
+    .about-section {
+ 
+        background-image: url(mobileabout.png);
+
+    }
+    
+}
+
+.about-content {
+    
+margin-left: 10px;
+}
+
+
+#dia{
+    margin-right: 15px;
+}
+
+
+.about-content h2 {
+    color: black;
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+    
+    display: flex;
+    font-family: 'Dai Banna SIL', serif;
+    font-size: 34px;
+    margin-top:-10px;
+}
+
+
+
+
+.about-content p {
+    max-width: 80%;
+    color: black;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+}
+
+.learn-more {
+    
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: black;
+    color: #D4AF37;
+    text-decoration: none;
+    border: 1px solid black;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.learn-more:hover {
+    background-color: #D4AF37;
+    color: black;
+}
+
+
+
+
+
+
+
+@keyframes flipper{
+    0%{
+        transform:scaleY(0.8);
+    }
+
+    100%{
+        transform:scaleY(1);
+    }
+}
+/* Additional styles for the Why Us section */
+.why-us-section {
+    margin-bottom: 200px;
+    background-color: #D4AF37;
+    text-align: center;
+    padding: 30px 0;
+    color: black;
+
+    
+}
+
+
+
+.why-us-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+
+.why-us-box {
+    background-color: #D4AF37;
+    padding: 20px;
+    margin: 10px;
+
+    text-align: center;
+    border-right: 1px solid black;
+    flex: 1; /* Add this line to make the boxes equal width and stay side by side */
+}
+
+
+
+.no-line{
+    border-right: none;
+}
+
+.why-us-box i {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.why-us-section h2{
+letter-spacing: 1px;
+
+}
+
+.why-us-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Dai Banna SIL', serif;
+    
+
+}
+
+
+.why-us-box p {
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    line-height: 20px;
+}
+
+
+
+
+
+
+@keyframes smiling{
+    0%{
+        transform: scaleY(0);
+    }
+
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+
+
+/* Additional styles for the Testimonials section */
+.testimonials-section {
+
+    text-align: center;
+    padding: 30px 0;
+    color: black;
+    margin-bottom: 200px;
+}
+
+.testimonials-section h2{
+    font-family: 'Dai Banna SIL', serif;
+    font-size: 30px
+}
+
+
+
+#theunderline{
+    margin-top: -20px;
+    animation-name: smiling;
+    animation-duration: 1.5s;
+}
+
+
+
+
+.testimonial-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.testimonial-box {
+    background-color: #D4AF37;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.testimonial-box img {
+    width: 100px; /* Adjust the image size as needed */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-box p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.see-more {
+    margin-top: 20px;
+}
+
+.see-more a {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #D4AF37;
+    color: black;
+    text-decoration: none;
+    border: 1px solid #D4AF37;
+    transition: 0.5s;
+}
+
+.see-more a:hover {
+    background-color: black;
+    color: #D4AF37;
+}
+
+::placeholder{
+    color: #D4AF37;
+}
+
+
+input[type = text]:focus ::placeholder{
+    color: black;
+}
+
+
+.contact-page input{
+    max-width: 300px;
+}
+
+.contact-page textarea{
+    max-width: 300px;
+    height: 200px;
+}
+
+/* Additional styles for the Contact Form section */
+.contact-form-section {
+    background-color: #D4AF37;
+    text-align: center;
+    padding: 30px 0;
+    color: black;
+    margin-bottom: 200px;
+
+}
+
+.contact-form-section h2{
+    font-family: 'Dai Banna SIL', serif;
+    font-size: 34px;
+    color: black;
+}
+
+#contact-form {
+    max-width: 600px;
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.form-group input,
+.form-group textarea {
+    outline: none;
+    width: 130%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #D4AF37;
+    background-color: black;
+    color: #D4AF37;
+    transition: 0.5s;
+    font-family: 'REM', sans-serif;
+    border-bottom: 1px solid black;
+}
+
+textarea:focus,
+input:focus{
+    background-color: #D4AF37;
+    color: black;
+}
+
+.form-group input[type="date"] {
+    background-color: #D4AF37;
+    color: black;
+    border: 1px solid #D4AF37;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: black;
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'REM', sans-serif;
+}
+
+
+button[type="submit"]:hover{
+    background: black;
+    color: #D4AF37;
+}
+
+
+
+
+
+
+
+
+
+/* Additional styles for the Footer section */
+.footer-section {
+    background-color: #D4AF37;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    height: 500px;
+}
+
+.footer-logo {
+    margin: 0 auto;
+}
+
+.footer-map {
+    position: absolute;
+    width: 100%;
+    
+}
+iframe{
+    left: 0;
+    height: 200px;
+    position: absolute;
+    width: 100%;
+    margin-top: 250px;
+}
+.footer-links {
+    float: right;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.5s;
+}
+
+.footer-links a:hover{
+    color: white;
+}
+
+.footer-contact {
+    color: black;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 2%;
+
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+   
+}
+
+.contact-info a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+.contact-info a:hover{
+    color: #D4AF37;
+    background-color: black;
+}
+
+
+.contact-info i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+header {
+    background-color: #D4AF37;
+    margin-top: 150px;
+    color: black;
+    padding: 20px 0;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 350px;
+    animation-name: color-change;
+    animation-duration: 3s; /* Total duration of the animation */
+    animation-fill-mode: forwards; /* Keeps the final styles after the animation ends */
+    
+
+}
+header h1{
+font-size: 72px;
+font-family: 'Dai Banna SIL', serif;
+}
+
+header img{
+    margin: 30px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.resource-box {
+    background-color: #D4AF37;
+    color: #000;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 100px;
+    height: 330px;
+}
+
+
+.resource-box h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    font-family: 'Dai Banna SIL', serif;
+}
+
+
+#mysvg{
+    margin-top: -20px;
+}
+
+.resource-box p {
+width: 100%;
+margin-bottom: 50px;
+font-size: 18px;
+
+}
+
+.resource-box a {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #D4AF37;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background-color: black;
+    border-radius: 100px;
+    transition: 0.3s;
+    padding-right: 42px;
+}
+
+.resource-box a::before {
+    content: "";
+    display: inline-block;
+    width: 22px; /* Adjust the width as needed */
+    height: 22px; /* Adjust the height as needed */
+    background-image: url('download-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+
+}
+
+.resource-box a:hover::before {
+    background-image: url('download-icon-hover.png');
+}
+
+
+
+.resource-box a:hover {
+    background-color: #D4AF37;
+    color: #000;
+}
+
+
+
+
+
+
+h1 {
+    font-size: 36px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.practice-box {
+    background-color: #D4AF37;
+    color: #000;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #D4AF37;
+    border-left: 0;
+    border-right: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 100px;
+}
+
+.practice-box:hover {
+    background-color: #000;
+    color: #D4AF37;
+}
+
+.practice-box h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Dai Banna SIL', serif;
+}
+
+.practice-box p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@media screen and (max-width:600px){
+    .practice-box p {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+#stars{
+    width: 150px;
+}
+
+
+
+.contact-column{
+    display:inline-block;
+    position: relative;
+    margin-left: -20%;
+    margin-top: 20px;
+}
+
+
+.phoneandemail{
+    position: absolute;
+    margin-left: 80px;
+}
+
+.putborder{
+    padding-right: 180px;
+    border-right: 1px solid #D4AF37;
+}
+
+.phoneandemail a{
+    padding: 15px 15px;
+    text-decoration: none;
+    background-color: black;
+    color: #D4AF37;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.phoneandemail p{text-align: left;}
+
+.phoneandemail a:hover{
+    background-color: transparent;
+    color: black;
+
+}
+
+
+
+#nicecontactline{
+    position: absolute; 
+    margin-top: -40px; 
+    margin-left: -40px;
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    #nicecontactline{
+        position: relative; 
+        margin-top: -40px; 
+        margin-left: 0px;
+    }
+    
+    .navbar.scrolled .logo{
+        content: url(black-logo.png);
+        width: 150px;
+        cursor: pointer;
+      }
+    
+
+    .logo img{
+        margin-top: 5px;
+        width: 150px;
+
+    }
+
+    .menu{
+        display: block;
+        padding: 10px;
+    }
+
+    .navbar a{
+        display: none;
+    }
+    .gold-area{
+        margin-top: -20px;
+    }
+    .gold-area h1{
+        font-size: 45px;
+    }
+    .gold-area p{
+        font-size: 15px;
+    }
+    .why-us-boxes{
+        display: inline-block;
+        
+    }
+    .why-us-box{
+        border-right: none;
+        border-bottom: 1px solid black;
+        
+    }
+    .no-line{
+        border-bottom: none;
+    }
+
+    .about-content p{
+        max-width: 100%;
+    }
+
+.contact-form-section{
+    text-align: center;
+}
+
+.contact-form-section img{
+    margin-top: -50px;
+margin-left: auto;
+margin-right: auto;
+}
+    
+input[type=text],
+input[type=email],
+input[type=tel]{
+    width: 170%;
+}
+
+.form-group textarea{
+    width: 178%;
+}
+
+.contact-column{
+    margin-top: 100px;
+    margin-left: 2%;
+    border-right: none;
+    display: block;
+}
+
+
+.phoneandemail{
+    margin-top: -725px;
+    display: flex;
+    
+    margin-left: 6%;
+    
+}
+
+.phoneandemail p{
+    display: none;
+}
+
+.phoneandemail a{
+    margin-right: 20px;
+}
+
+
+
+/* Additional styles for the Footer section */
+.footer-section {
+    background-color: #D4AF37;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    height: 500px;
+}
+
+.footer-logo {
+    margin: 0 auto;
+}
+
+.footer-map {
+    float: left;
+    margin-top: 200px;
+}
+
+.footer-links {
+    float:inline-start;
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+.footer-contact {
+    color: black;
+    position: absolute;
+    margin-top: 70%;
+    margin-left: -39%;
+    transform: translate(50%, 50%);
+}
+
+.resource-box{
+    height: 550px;
+}
+
+
+
+}
+
+@media screen and (max-width:600px){
+    header{
+        padding-bottom: 130px;
+    }
+}

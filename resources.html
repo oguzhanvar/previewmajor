@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <base href="">
+    <title>Resources</title>
+</head>
+<body>
+
+
+    <div class="menu" onclick="openmenu2()" id="menu">
+        <img src="menuicon.png" alt="menu" width="30px" onclick="openmenu2()" id="menuicon">
+    </div>
+
+
+    <div class="menu-content" id="menu-content">
+        <ul>
+            <img src="closeicon.png" alt="" width="30px" class="close" onclick="closemenu()">
+            <img src="black-logo.png" alt="" width="200px" onclick="location.href = '/previewmajor/index.html'" id="myblack">
+            <li><a href="practiceareas.html">Practice Areas</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="testimionals.html">Testimonials</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="+141547465750">+141547465750</a></li>
+            <li><a href="example@example.com">example@example.com</a></li>
+            <li><a href="https://maps.app.goo.gl/FErGB4VkaFy6Dajn7" target="_blank">1388 Sutter St UNIT 521, San Francisco, CA 94109, United States</a></li>
+        </ul>
+    </div>
+
+ <script>
+        function openmenu2() {
+            var menuContent = document.getElementById("menu-content");
+            var risingpoint = document.getElementById("myblack")
+            menuContent.style.height = "130%";
+            risingpoint.style.animation = "rise 1.5s"; // Apply the animation
+    
+            // Reset the animation after it completes
+            setTimeout(function () {
+                risingpoint.style.animation = "";
+            }, 2000); // Set the timeout to match the animation duration
+        }
+    
+        function closemenu() {
+            var menuContent = document.getElementById("menu-content");
+    
+            menuContent.style.height = "0%";
+        }
+    </script>
+    <nav class="navbar"  id="navbar">
+            <div class="logo" onclick="location.href='/previewmajor/index.html'">
+            <img src="gold-logo.png" alt="Law Office Logo" onclick="location.href='/previewmajor/index.html'">
+        </div>
+        <ul class="nav-links">
+            <li><a href="practiceareas.html">Practice Areas</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="testimionals.html">Testimonials</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="contact">
+            <a href="contact.html" class="contact-link">Contact</a>
+        </div>
+    </nav>
+
+
+
+    <header>
+
+        <h1>Our Resources</h1>
+        <p>"Our resources are your legal compass, guiding you through the complexities of the law."
+        </p>
+  
+        <img src="/previewmajor/black-logo.png" alt="" width="200px">
+    </header>
+
+
+
+
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL&display=swap');
+
+
+
+.menu-content{
+
+margin-top: -220px;
+z-index: 101;
+}
+
+
+
+</style>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function() {
+        var scroll = window.scrollY || window.pageYOffset;
+
+        if (scroll > 0) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var menu = document.getElementById("menu");
+
+      window.addEventListener("scroll", function() {
+        var scroll = window.scrollY || window.pageYOffset;
+
+        if (scroll > 0) {
+          menu.classList.add("scrolled");
+          document.getElementById('menuicon').src = 'black-menu.png';
+        } else {
+            menu.classList.remove("scrolled");
+            document.getElementById('menuicon').src = 'menuicon.png';
+        }
+      });
+    });
+  </script>
+    <main>
+        <section class="resource-box">
+            <h2>Co-Parenting Guide Hub</h2>
+             <img src="niceline.svg" alt="" width="330px" id="mysvg">
+            <p>Explore our comprehensive Co-Parenting Guide Hub to find expert advice and practical resources for successful co-parenting. Whether you're going through a divorce or separation, our hub offers articles, tips, and tools to help you build a healthy co-parenting relationship, navigate custody arrangements, and prioritize your child's well-being.</p>
+            <a href="#">Download</a>
+        </section>
+        <section class="resource-box">
+            <h2>Divorce Financial Planning Center</h2>
+            <img src="niceline.svg" alt="" width="330px" id="mysvg">
+
+            <p>The Divorce Financial Planning Center is your go-to resource for understanding the financial aspects of divorce. Dive into our wealth of articles, calculators, and guides designed to help you make informed decisions about property division, spousal support, and financial planning for life after divorce. Secure your financial future with our expert insights.</p>
+            <a href="#">Download</a>
+        </section>
+        <section class="resource-box">
+            <h2>Mediation and ADR Toolkit</h2>
+            <img src="niceline.svg" alt="" width="330px" id="mysvg">
+
+            <p>Empower yourself with the Mediation and ADR Toolkit, your one-stop resource for alternative dispute resolution methods. Whether you're seeking a peaceful resolution for divorce, child custody, or family disputes, our toolkit offers informative articles, mediation checklists, and step-by-step guides to help you explore mediation, negotiation, and collaborative approaches for resolving conflicts effectively.</p>
+            <a href="#">Download</a>
+        </section>
+    </main>
+
+    
+
+    <footer class="footer-section">
+        <div class="footer-logo">
+            <img src="black-logo.png" alt="Footer Logo" width="250px">
+        </div>
+        <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.101794470897!2d-122.42568158954037!3d37.78765411130279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580959df707c7%3A0xe3cfa1d9235f41b8!2sDale%20G%20Major%20Law%20Offices!5e0!3m2!1sen!2str!4v1696181500641!5m2!1sen!2str" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="practiceareas.html">Practice Areas</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="testimionals.html">Testimonials</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <div class="contact-info">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:example@example">Email: example@example.com</a>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-phone"></i>
+                <a href="tel:123456789">Phone: +14154746575</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

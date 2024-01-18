@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Testimonials</title>
+</head>
+<body>
+
+
+
+    <div class="menu" onclick="openmenu2()" id="menu">
+        <img src="menuicon.png" alt="menu" width="30px" onclick="openmenu2()" id="menuicon">
+    </div>
+
+
+
+    <div class="menu-content" id="menu-content">
+        <ul>
+            <img src="closeicon.png" alt="" width="30px" class="close" onclick="closemenu()">
+            <img src="black-logo.png" alt="" width="200px" onclick="location.href = '/previewmajor/index.html'" id="myblack">
+            <li><a href="practiceareas.html">Practice Areas</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="testimionals.html">Testimonials</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="+141547465750">+141547465750</a></li>
+            <li><a href="example@example.com">example@example.com</a></li>
+            <li><a href="https://maps.app.goo.gl/FErGB4VkaFy6Dajn7" target="_blank">1388 Sutter St UNIT 521, San Francisco, CA 94109, United States</a></li>
+        </ul>
+    </div>
+
+ <script>
+        function openmenu2() {
+            var menuContent = document.getElementById("menu-content");
+            var risingpoint = document.getElementById("myblack")
+            menuContent.style.height = "130%";
+            risingpoint.style.animation = "rise 1.5s"; // Apply the animation
+    
+            // Reset the animation after it completes
+            setTimeout(function () {
+                risingpoint.style.animation = "";
+            }, 2000); // Set the timeout to match the animation duration
+        }
+    
+        function closemenu() {
+            var menuContent = document.getElementById("menu-content");
+    
+            menuContent.style.height = "0%";
+        }
+    </script>
+
+    <nav class="navbar"  id="navbar">
+            <div class="logo" onclick="location.href='/previewmajor/index.html'">
+            <img src="gold-logo.png" alt="Law Office Logo" onclick="location.href='/previewmajor/index.html'" width="200px">
+        </div>
+        <ul class="nav-links">
+            <li><a href="practiceareas.html">Practice Areas</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="testimionals.html">Testimonials</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="contact">
+            <a href="contact.html" class="contact-link">Contact</a>
+        </div>
+    </nav>
+
+
+
+
+
+    <header style="background-color:#D4AF37; ">
+        <h1>Our Testimonials</h1>
+        <p>"Discover what our clients have to say about their exceptional experiences with our firm."
+        </p>
+
+        <img src="/previewmajor/black-logo.png" alt="" width="200px">
+    </header>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var navbar = document.getElementById("navbar");
+    
+          window.addEventListener("scroll", function() {
+            var scroll = window.scrollY || window.pageYOffset;
+    
+            if (scroll > 0) {
+              navbar.classList.add("scrolled");
+            } else {
+              navbar.classList.remove("scrolled");
+            }
+          });
+        });
+
+        
+        document.addEventListener("DOMContentLoaded", function() {
+      var menu = document.getElementById("menu");
+
+      window.addEventListener("scroll", function() {
+        var scroll = window.scrollY || window.pageYOffset;
+
+        if (scroll > 0) {
+          menu.classList.add("scrolled");
+          document.getElementById('menuicon').src = 'black-menu.png';
+        } else {
+            menu.classList.remove("scrolled");
+            document.getElementById('menuicon').src = 'menuicon.png';
+        }
+      });
+    });
+      </script>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL&display=swap');
+
+
+
+
+</style>
+    <main>
+        <section class="testimonial-box">
+            <img src="client.png" alt="Client 1" id="clientpics"> <br>
+            <img src="fivestar.png" alt="fivestar" width="150px">
+            <p>I can't express how grateful I am to have had such an amazing lawyer by my side during my recent legal 
+                battle. From the moment I met them, I knew I was in capable hands. Their knowledge of the law, attention
+                 to detail, and dedication to my case were truly exceptional. They tirelessly fought for my rights, and
+                  their strategic thinking and courtroom skills were second to none. Thanks to their expertise,
+                   I achieved a favorable outcome that I never thought possible. My lawyer's commitment to justice
+                    is truly inspiring, and I would recommend them to anyone in need of legal representation. <br>-Maria</p>
+        </section>
+        <section class="testimonial-box">
+            <img src="client2.png" alt="Client 2" id="clientpics"> <br>
+            <img src="fivestar.png" alt="fivestar" width="150px">
+            <p>Hiring our lawyer was the best decision I ever made. Their level of dedication and professionalism 
+                is unmatched. Throughout our legal journey, they displayed an incredible ability to understand complex
+                 legal issues and devise innovative solutions. Their communication skills were outstanding, ensuring that
+                  I was always well-informed and comfortable with the legal process. What sets them apart is their genuine
+                   care for their clients and their relentless pursuit of justice. Thanks to our lawyer's remarkable skills
+                    and unwavering commitment, we achieved a result that exceeded our expectations. I can't thank them
+                     enough for their incredible support and expertise. <br>-Chris</p>
+        </section>
+        <section class="testimonial-box">
+            <img src="client3.png" alt="Client 3" id="clientpics"> <br>
+            <img src="fivestar.png" alt="fivestar" width="250px">
+            <p>I want to take a moment to express my gratitude for the outstanding work of our lawyer.
+                 They are not just a legal expert; they are a true advocate for their clients. From day one, 
+                 they demonstrated an unparalleled level of dedication, tirelessly working to build a solid case
+                  on my behalf. Their legal expertise and courtroom presence were truly impressive, and I always
+                   felt reassured knowing they were on my side. Their ability to navigate the complexities of the
+                    legal system and their unwavering commitment to my case were nothing short of amazing. Thanks
+                     to their exceptional skills, I achieved a favorable outcome that I never thought possible. I
+                      can't recommend our lawyer enough – they are simply outstanding. <br>-Andrew</p>
+        </section>
+    </main>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+
+
+.navbar {
+ 
+ background-color: black;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px 20px;
+ padding-top: 15px;
+}
+
+#clientpics{
+    width: 100px;
+}
+
+
+
+.menu-content{
+    margin-top: -230px;
+z-index: 101;
+}
+
+
+h1 {
+    font-size: 36px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonial-box {
+    background-color: #D4AF37;
+    color: #000;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 100px;
+    align-items: center;
+    font-size: 18px;
+    padding: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+}
+
+.testimonial-box img {
+    width: 150px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.testimonial-box p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+</style>
+
+
+<footer class="footer-section">
+    <div class="footer-logo">
+        <img src="black-logo.png" alt="Footer Logo" width="250px">
+    </div>
+    <div class="footer-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.101794470897!2d-122.42568158954037!3d37.78765411130279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580959df707c7%3A0xe3cfa1d9235f41b8!2sDale%20G%20Major%20Law%20Offices!5e0!3m2!1sen!2str!4v1696181500641!5m2!1sen!2str" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="practiceareas.html">Practice Areas</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="testimionals.html">Testimonials</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-contact">
+        <div class="contact-info">
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:example@example">Email: example@example.com</a>
+        </div>
+        <div class="contact-info">
+            <i class="fa fa-phone"></i>
+            <a href="tel:123456789">Phone: +14154746575</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

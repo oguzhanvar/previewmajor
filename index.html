@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Law Office</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div class="menu" onclick="openmenu2()" id="menu">
+        <img src="menuicon.png" alt="menu" width="30px" onclick="openmenu2()" id="menuicon">
+    </div>
+
+
+    <div class="menu-content" id="menu-content">
+        <ul>
+            <img src="closeicon.png" alt="" width="30px" class="close" onclick="closemenu()">
+            <img src="black-logo.png" alt="" width="200px" onclick="location.href = '/previewmajor/index.html'" id="myblack">
+            <li><a href="practiceareas.html">Practice Areas</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="testimionals.html">Testimonials</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="+141547465750">+141547465750</a></li>
+            <li><a href="example@example.com">example@example.com</a></li>
+            <li><a href="https://maps.app.goo.gl/FErGB4VkaFy6Dajn7" target="_blank">1388 Sutter St UNIT 521, San Francisco, CA 94109, United States</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function openmenu2() {
+            var menuContent = document.getElementById("menu-content");
+            var risingpoint = document.getElementById("myblack")
+            menuContent.style.height = "130%";
+            risingpoint.style.animation = "rise 1.5s"; // Apply the animation
+    
+            // Reset the animation after it completes
+            setTimeout(function () {
+                risingpoint.style.animation = "";
+            }, 2000); // Set the timeout to match the animation duration
+        }
+    
+        function closemenu() {
+            var menuContent = document.getElementById("menu-content");
+    
+            menuContent.style.height = "0%";
+        }
+    </script>
+
+
+<div class="thetop">
+    <nav class="navbar" id="navbar">
+        <div class="logo" onclick="location.href='/previewmajor/index.html'">
+            <img src="gold-logo.png" alt="Law Office Logo" onclick="location.href='/previewmajor/index.html'" id="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="practiceareas.html">Practice Areas</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="testimionals.html">Testimonials</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="contact">
+            <a href="contact.html" class="contact-link">Contact</a>
+        </div>
+    </nav>
+</div>
+
+
+
+<script>
+
+
+document.addEventListener("DOMContentLoaded", function() {
+      var menu = document.getElementById("menu");
+
+      window.addEventListener("scroll", function() {
+        var scroll = window.scrollY || window.pageYOffset;
+
+        if (scroll > 0) {
+          menu.classList.add("scrolled");
+          document.getElementById('menuicon').src = 'black-menu.png';
+        } else {
+            menu.classList.remove("scrolled");
+            document.getElementById('menuicon').src = 'menuicon.png';
+        }
+      });
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function() {
+        var scroll = window.scrollY || window.pageYOffset;
+
+        if (scroll > 0) {
+          navbar.classList.add("scrolled");
+          document.getElementById('logo').href = 'index.html';
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    });
+
+
+
+
+
+  
+  </script>
+
+
+    <video src="bgvideo.mp4" width="100%" style="max-width: 100%; position: absolute; z-index:-1;" autoplay loop muted id="background-video"></video>
+
+<div class="gold-area">
+
+<h1>We're Guiding Family Resolutions.</h1>
+
+<p>"At Dale G Major Law Offices, we offer expert legal guidance for your family law needs. With our
+     compassionate approach and extensive experience, we provide personalized solutions for divorce, 
+     child custody, and more. Trust us to navigate the complexities of family law with clear communication 
+     and dedicated advocacy. Contact us today for a confidential consultation."</p>
+
+<a href="" id="request">Request a free consultation</a>
+
+</div>
+
+<script>
+    // Function to handle the click event
+    function scrollToPosition(position) {
+      const targetElement = document.getElementById(position);
+      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+      const startPosition = window.scrollY;
+      const startTime = performance.now();
+      const duration = 2000; // Set the duration of the scroll (in milliseconds)
+
+      function animateScroll(currentTime) {
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        const easeInOutQuad = progress < 0.5 ? 2 * progress ** 2 : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+        window.scrollTo(0, startPosition + (targetPosition - startPosition) * easeInOutQuad);
+
+        if (timeElapsed < duration) {
+          window.requestAnimationFrame(animateScroll);
+        }
+      }
+
+      window.requestAnimationFrame(animateScroll);
+    }
+
+    // Add a click event listener to the anchor tag
+    document.getElementById('request').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default behavior of the anchor tag
+      scrollToPosition('contact_us'); // Scroll to the specified position (request in this case)
+    });
+  </script>
+
+
+
+<style>
+
+html {
+  scroll-behavior: smooth;
+}
+</style>
+
+
+
+
+
+
+
+
+
+    <section class="about-section">
+        <div class="about-content">
+            <h2><img src="dia-icon.svg" alt="" width="30px" id="dia"> About Us</h2>
+       <p>
+        Welcome to our esteemed law firm, where our unwavering commitment to excellence sets us apart. Comprising a dedicated team of seasoned legal professionals, we take pride in delivering unparalleled legal services tailored to meet the unique needs of our valued clients. Drawing upon years of collective experience, we have honed our expertise in a diverse array of legal domains, ensuring that we stand ready to address your specific requirements with precision and insight.
+
+        At our firm, we understand the importance of navigating the complexities of the legal landscape, and we are here to guide you through every step of the process. Our mission is not only to provide expert legal representation but also to foster a relationship built on trust, transparency, and client satisfaction.
+        
+        Whether you require assistance with corporate law, family law, real estate, or any other legal matter, our team is well-equipped to handle your case with diligence and proficiency. We strive to exceed your expectations by combining a deep understanding of the law with a personalized approach, ensuring that you receive the attention and support you deserve.
+        
+        As your dedicated legal partners, we are committed to upholding the highest standards of professionalism and ethics. Our passion for justice and our relentless pursuit of favorable outcomes for our clients drive us to consistently deliver results that matter.
+            </p>
+            <a href="contact.html" class="learn-more">Learn More</a>
+        </div>
+    </section>
+
+
+
+    <section class="why-us-section">
+        <h2>Why Us?</h2>
+        <div class="why-us-boxes">
+            <div class="why-us-box">
+                <img src="experienced.png" alt="" width="100px">
+                <h3>Experienced Team</h3>
+                <p>We have a dedicated and experienced team of legal professionals ready to serve you.</p>
+            </div>
+            <div class="why-us-box">
+                <img src="expertise.png" alt="" width="100px">
+                <h3>Legal Expertise</h3>
+                <p>Our extensive legal expertise allows us to handle a wide range of cases and issues effectively.</p>
+            </div>
+            <div class="why-us-box no-line">
+                <img src="timely.png" alt="" width="100px">
+                <h3>Timely Service</h3>
+                <p>We understand the importance of your time, and we provide efficient and timely service.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    <section class="testimonials-section">
+        <h2 style="color:#D4AF37;">Hear from <span id="happy">Happy Clients.</span></h2>
+        <img src="smile.png" alt="" width="300px" id="theunderline" class="smile">
+        <div class="testimonial-boxes">
+            <div class="testimonial-box">
+                <img src="client.png" alt="Testimonial 1"> <br>
+                <img src="fivestar.png" alt="" style="border-radius:0;" id="stars">
+                <p>I can't express how grateful I am to have had such an amazing lawyer by my side during my recent legal 
+                    battle. From the moment I met them, I knew I was in capable hands. Their knowledge of the law, attention
+                     to detail, and dedication to my case were truly exceptional. They tirelessly fought for my rights, and
+                      their strategic thinking and courtroom skills were second to none. Thanks to their expertise,
+                       I achieved a favorable outcome that I never thought possible. My lawyer's commitment to justice
+                        is truly inspiring, and I would recommend them to anyone in need of legal representation. <br><span id="client">-Maria </span></p>
+            </div>
+            <div class="testimonial-box">
+                <img src="client2.png" alt="Testimonial 2"> <br>
+                <img src="fivestar.png" alt="" style="border-radius:0;" id="stars">
+                <p>Hiring our lawyer was the best decision I ever made. Their level of dedication and professionalism 
+                    is unmatched. Throughout our legal journey, they displayed an incredible ability to understand complex
+                     legal issues and devise innovative solutions. Their communication skills were outstanding, ensuring that
+                      I was always well-informed and comfortable with the legal process. What sets them apart is their genuine
+                       care for their clients and their relentless pursuit of justice. Thanks to our lawyer's remarkable skills
+                        and unwavering commitment, we achieved a result that exceeded our expectations. I can't thank them
+                         enough for their incredible support and expertise. <br><span id="client">-Christ </span></p>
+            </div>
+            <div class="testimonial-box">
+                <img src="client3.png" alt="Testimonial 3"> <br>
+                <img src="fivestar.png" alt="" style="border-radius:0;" id="stars">
+                <p>I want to take a moment to express my gratitude for the outstanding work of our lawyer.
+                    They are not just a legal expert; they are a true advocate for their clients. From day one, 
+                    they demonstrated an unparalleled level of dedication, tirelessly working to build a solid case
+                     on my behalf. Their legal expertise and courtroom presence were truly impressive, and I always
+                      felt reassured knowing they were on my side. Their ability to navigate the complexities of the
+                       legal system and their unwavering commitment to my case were nothing short of amazing. Thanks
+                        to their exceptional skills, I achieved a favorable outcome that I never thought possible. I
+                         can't recommend our lawyer enough – they are simply outstanding.<br><span id="client">-Andrew</span></p>
+            </div>
+        </div>
+        <div class="see-more">
+            <a href="testimionals.html">See More</a>
+        </div>
+    </section>
+    
+    
+<style>
+    
+@keyframes smiling{
+    0%{
+        transform: scaleY(0);
+    }
+
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+
+</style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+            var triggerPosition = 1600; // Change this value to your desired trigger position
+    
+            if (scrollPosition >= triggerPosition) {
+              // Add the class to start the animation
+              document.querySelector('.smile').classList.add('animate-smiling');
+            } else {
+              // Remove the class if scrolling back up
+              document.querySelector('.smile').classList.remove('animate-smiling');
+            }
+          });
+        });
+      </script>
+
+
+<section class="contact-form-section" style="margin-top: 100px;">
+
+    <h2 style="color: black;">We Can't Wait to Asist you<span style="font-family: 'REM', sans-serif;">!</span></h2>
+    <img src="nicelineblack.svg" alt="" width="250px" id="nicecontactline">
+    <div class="contact-column putborder">
+    <form id="contact-form" method="post" action="sendmail.php">
+        <div class="form-group">
+            <label for="first-name" style="color: black;">First Name</label>
+            <input type="text" id="first-name" name="first-name" required >
+        </div>
+        <div class="form-group">
+            <label for="last-name" style="color: black;">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required >
+        </div>
+        <div class="form-group">
+            <label for="email" style="color: black;">Email</label>
+            <input type="email" id="email" name="email" required >
+        </div>
+        <div class="form-group">
+            <label for="phone" style="color: black;">Phone</label>
+            <input type="tel" id="phone" name="phone" required >
+        </div>
+        <div class="form-group">
+            <label for="when-to-contact" style="color: black;">When Is a Good Time to Get Back to You?</label>
+            <input type="text" id="when-to-contact" name="when-to-contact" placeholder="ex. After 5pm, on the weekends. etc.">
+        </div>
+        <div class="form-group">
+            <label for="case-details" style="color: black;">Explain Your Case</label>
+            <textarea id="case-details" name="case-details" rows="4" ></textarea>
+        </div>
+        <div class="form-group">
+            <button id="mybutton" type="submit" >Submit</button>
+        </div>
+    </form>
+    </div>
+    <div class="phoneandemail contact-column">
+        <p>Phone</p>
+        <a href="tel:+14154746575">+14154746575</a> 
+        <p>Email</p>
+        <a href="mailto:example@example">example@example</a>
+    </div>
+
+
+
+</section>
+
+
+
+
+
+    <footer class="footer-section">
+        <div class="footer-logo">
+            <img src="black-logo.png" alt="Footer Logo" width="250px">
+        </div>
+        <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.101794470897!2d-122.42568158954037!3d37.78765411130279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580959df707c7%3A0xe3cfa1d9235f41b8!2sDale%20G%20Major%20Law%20Offices!5e0!3m2!1sen!2str!4v1696181500641!5m2!1sen!2str" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="practiceareas.html">Practice Areas</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="testimionals.html">Testimonials</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <div class="contact-info">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:example@example">Email: example@example.com</a>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-phone"></i>
+                <a href="tel:123456789">Phone: +14154746575</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        var video = document.getElementById('background-video');
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    
+        if (isMobile) {
+            video.src = 'mobilevid.mp4';
+        }
+    </script>
+    
+
+</body>
+</html>
